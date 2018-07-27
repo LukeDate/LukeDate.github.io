@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 //the main app
 import App from './containers/App';
 import { Provider } from 'react-redux';
+//main routes
+import AppRoutes from './routes';
 import store from './store';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <AppRoutes />
   </Provider>,
+  document.getElementById('app')
 )
-
-ReactDOM.render(<App />, document.getElementById('app'));
