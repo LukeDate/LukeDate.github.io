@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import messageReducer from './reducers/message';
+import messageReducer from './Redux/reducers/message';
 import thunk from 'redux-thunk';
 
 const reducer = combineReducers({
@@ -8,7 +8,8 @@ const reducer = combineReducers({
 
 const store = createStore(
   reducer,
-  applyMiddleware(thunk)
+  applyMiddleware(thunk),
+  //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
 export default store;

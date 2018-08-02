@@ -1,22 +1,15 @@
 import React, {Component} from 'react';
-import InputPreview from '../components/InputPreview';
 import {connect} from 'react-redux';
-import {setMessage} from '../actions/message';
 import {Link} from 'react-router-dom';
+import HomePage from '../components/templates/HomePage';
+import './App.scss';
 
 class App extends Component {
 
-  _onChange = (value) => {
-    this.props.dispatch(setMessage(value))
-  }
-
   render () {
-    const {message} = this.props.messageReducer;
     return (
-      <div>
-        <InputPreview
-          value={message}
-          onChange={this._onChange}/>
+      <div className='appWrapper'>
+        <HomePage title={'Hi, I\'m Luke'} />
         <Link to="/about">
           <button>Go to About</button>
         </Link>

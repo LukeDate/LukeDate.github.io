@@ -1,0 +1,15 @@
+.pageGrid {
+  display: flex;
+
+  .leftSection {
+    width: 20%;
+  }
+
+  .middleSection {
+    width: 60%;
+  }
+
+  .rightSection {
+    width: 20%;
+  }
+}
