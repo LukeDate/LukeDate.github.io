@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BigTitle } from '../atoms/index';
+import { BigTitle } from '../index';
 import {setMessage} from '../../Redux/actions/message';
-import './HomePage.scss';
+import './styles/HomePage.scss';
 
 class HomePage extends Component {
 
