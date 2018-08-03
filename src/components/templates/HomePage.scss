@@ -1,11 +1,12 @@
 .pageGrid {
   display: flex;
-
+  width: 100%;
   .leftSection {
     width: 20%;
   }
 
   .middleSection {
+    text-align: center;
     width: 60%;
   }
 
