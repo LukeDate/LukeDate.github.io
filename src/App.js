@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import styled from 'styled-components';
 import {
@@ -16,7 +16,9 @@ import Hamsa from './pages/hamsa';
 
 
 function App() {
+  const [active, setActive] = useState('');
   const HamsaImg = styled('img')`
+
   width: 50px;
   height: 50px;
 `;
@@ -27,22 +29,27 @@ function App() {
     left: 10px;
   `;
 
+  const NavLink = styled(Link)`
+    background-color: ${props => props.active === active ? '#e8e8e8' : ''};
+    color: ${props => props.active === active ? 'rgba(0, 0, 0, 0.5) !important' : ''};
+  `;
+
   return (
     <div className="App">
       <Router>
       <div className="nav">
-        <Link to="/">
+        <NavLink active={'home'} onClick={() => setActive('home')} to="/">
           Home
-        </Link>
-        <Link to="/skills+qualifications">
+        </NavLink>
+        <NavLink active={'skills'} onClick={() => setActive('skills')} to="/skills+qualifications">
           Skills and Qualifications
-        </Link>
-        <Link to="/about+me">
+        </NavLink>
+        <NavLink active={'about'} onClick={() => setActive('about')} to="/about+me">
           About Me
-        </Link>
-        <Link to="/photography">
+        </NavLink>
+        <NavLink active={'photos'} onClick={() => setActive('photos')} to="/photography">
           Photography
-        </Link>
+        </NavLink>
       </div>
         <HamsaLink to="/life">
           <HamsaImg src="/hamsa.png" />
