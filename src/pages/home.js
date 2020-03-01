@@ -40,6 +40,7 @@ const Home = () => {
     const List = styled('ul')`
         list-style: none;
         margin-top: 0;
+        padding: 0;
         > li {
             display: flex;
             justify-content: space-between;
@@ -63,10 +64,10 @@ const Home = () => {
                         <span>Email: </span><span>luke.date@hotmail.com</span>
                     </li>
                     <li>
-                        <span>LinkedIn: </span><span>https://www.linkedin.com/in/luke-date-6b7226b6/</span> 
+                        <a style={{textDecoration: 'none', color: '#e8e8e8'}} href="https://linkedin.com/in/luke-date-6b7226b6/">LinkedIn</a>
                     </li>
                     <li>
-                        <span>Instagram: </span> <span>https://www.instagram.com/lukusbrutus/</span>
+                        <a style={{textDecoration: 'none', color: '#e8e8e8'}} href="https://www.instagram.com/lukusbrutus/">Instagram</a>
                     </li>
                 </List>
             </Col>

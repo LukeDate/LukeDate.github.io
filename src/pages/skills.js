@@ -36,6 +36,11 @@ const Tile = styled('div')`
     border-radius: 2px;
 `;
 
+const LiHead = styled('div')`
+    padding: 10px 0px;
+    font-weight: 500;
+`;
+
 const devSkills = ['Python', 'HTML5', 'CSS3', 'Javascript', 'Ajax', 'React.Js', 'Node.Js', 'Express.Js', 'Redux.Js', 'MobX', 'MongoDB', 'React Testing Library', 'Jest', 'Enzyme', 'Git', 'Code Deployment', 'Recompose', 'Ramda', 'Styled-components', 'Styled-tools', 'ES6'];
 const physSkills =['Advanced Calculus', 'Data Handling', 'Laboratory Science', 'Classical Mechanics', 'Quantum Mechanics', 'Material Physics and Science', 'Electromagnetism', 'Statistical Maths and Mechanics', 'Atomic Physics', 'Particle Physics', 'Nuclear Physics', 'Wave Physics', 'Special & General Relativity', 'Cosmology', 'Stellar Evolution'];
 
@@ -55,28 +60,28 @@ const Skills = () => {
 
             <Text>IBM</Text>
             <List>
-                <li>Ernst & Young
+                <li><LiHead>Ernst & Young</LiHead>
                     <ul>
                         <li>Created a financial tool for a client using the latest React technologies. Used functional stateless components that require various libraries such as - Styled-tools, Recompose, Ramda and MobX for state management. Created completely reusable components with latest ES6 structure and functionality. Used Watson AI conversation to analyse Twitter data and sentiment of Tweets, worked with data scientists to display corporate financial data.  </li>
                     </ul>
 
                 </li>
-                <li>British Petroleum
+                <li><LiHead>British Petroleum</LiHead>
                     <ul>
                         <li>Started as a junior ReactJs developer and over 12 months became the technical lead developer overseeing the work of fellow graduates and interns.  Helped to create an internal mirco-site for both IBM and BP employees. Trained up interns and beginner developers while on the project and oversaw the  management of the source code. Developed skills in ReactJs for UI, NodeJs for back-end integration with servers and content management systems such as Watson Content Hub and unit testing using Jest. </li>
                     </ul>
                 </li>
-                <li>Barclays Bank
+                <li><LiHead>Barclays Bank</LiHead>
                     <ul>
                         <li>Created a micro-site for Barclays Bank which was used in a bid proposal for IBM iX’s digital platforms service line. The site was created in ReactJs using similar technologies to the BP microsite and was completed in a short period of time. The microsite was a leading influence in the success of the bid and brought many new projects for IBM.   </li>
                     </ul>
                 </li>
-                <li>Diageo
+                <li><LiHead>Diageo</LiHead>
                     <ul>
                         <li>Developed a bespoke micro-site for Diageo employees showcasing latest projects and portfolios. Gained skills with client interaction as designs and implemented components had to be signed off by the Diageo stakeholders.  </li>
                     </ul>
                 </li>
-                <li>IBM Client Innovation Centre
+                <li><LiHead>IBM Client Innovation Centre</LiHead>
                     <ul>
                         <li>Worked as a software analyst for IBM Product Transformation Center, dealing with IBM mergers and analysis of source code. Developed skills in basic javascript, css and html to develop an image scanner for product logos. Worked on Java apps for source code scanning.</li>
                     </ul>
