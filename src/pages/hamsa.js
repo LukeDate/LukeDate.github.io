@@ -3,7 +3,7 @@ import React from 'react';
 const Hamsa = () => {
     return (
         <div>
-            HELLOs
+            Coming Soon
         </div>
     )
 }
