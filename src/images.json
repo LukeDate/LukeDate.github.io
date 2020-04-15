@@ -1,0 +1,26 @@
+{
+    "imageProperties": [
+        {
+            "title": "Astrophotography",
+            "sources": [
+            "/photos/DSC_0193.jpg",
+            "/photos/DSC_0195.jpg",
+            "/photos/DSC_0202.jpg",
+            "/photos/DSC_0206.jpg",
+            "/photos/DSC_0200.jpg",
+            "/photos/DSC_0205.jpg"
+        ]
+        },
+        {
+            "title": "Astrophotography",
+            "sources": [
+            "/photos/DSC_0193.jpg",
+            "/photos/DSC_0195.jpg",
+            "/photos/DSC_0202.jpg",
+            "/photos/DSC_0206.jpg",
+            "/photos/DSC_0200.jpg",
+            "/photos/DSC_0205.jpg"
+        ]
+        }
+    ]
+}
